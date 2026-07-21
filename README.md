@@ -42,15 +42,15 @@ Ce projet vise à répondre aux questions suivantes :
 
 | Fichier | Description |
 |---------|-------------|
-| `streamlit_app/app.py` | Page d'accueil : KPIs globaux, insights business calculés automatiquement, méthodologie |
-| `streamlit_app/utils.py` | Chargement et nettoyage des données, calculs d'écarts de prix, logique de recommandation |
-| `streamlit_app/pages/1_📊_Dashboard_Benchmarking.py` | Comparaison des prix par marque et par catégorie (filtres, distribution) |
-| `streamlit_app/pages/2_🔍_Analyse_par_categorie.py` | Analyse détaillée d'une catégorie de produits donnée |
-| `streamlit_app/pages/3_💰_Simulateur_Pricing.py` | Recommandation de prix produit par produit, avec détail des concurrents similaires |
-| `streamlit_app/data/df_final.csv` | Catalogue produit consolidé (Klarstein + concurrents) |
-| `streamlit_app/data/matching_klarstein_concurrents.csv` | Résultats du matching produit (Klarstein ↔ concurrents) |
-| `streamlit_app/requirements.txt` | Librairies nécessaires à l'application |
-| `df_final_embeddings.pkl` | Embeddings texte/image utilisés pour le matching produit (fichier volumineux, non versionné sur GitHub — à héberger sur Hugging Face si besoin de reproductibilité) |
+| `app.py` | Page d'accueil : KPIs globaux, insights business calculés automatiquement, méthodologie |
+| `utils.py` | Chargement et nettoyage des données, calculs d'écarts de prix, logique de recommandation |
+| `page_1_Dashboard_Benchmarking.py` | Comparaison des prix par marque et par catégorie (filtres, distribution) |
+| `page_2_Analyse_par_categorie.py` | Analyse détaillée d'une catégorie de produits donnée |
+| `page_3_Simulateur_Pricing.py` | Recommandation de prix produit par produit, avec détail des concurrents similaires |
+| `data/df_final.csv` | Catalogue produit consolidé (Klarstein + concurrents) |
+| `data/matching_klarstein_concurrents.csv` | Résultats du matching produit (Klarstein ↔ concurrents) |
+| `requirements.txt` | Librairies nécessaires à l'application |
+| [`df_final_embeddings.pkl`](https://huggingface.co/datasets/Elisa-Guerin/ecommerce-competitive-pricing/blob/main/df_final_embeddings.pkl) *(Hugging Face)* | Embeddings texte/image utilisés pour le matching produit |
 
 ---
 
