@@ -1,6 +1,7 @@
 # 💶 Outil de Positionnement Prix E-commerce
 
-Outil d'aide au pricing pour le e-commerce, basé sur le benchmark concurrentiel et le matching produit (texte + image). Cas d'usage simulé : la marque **Klarstein** (petit électroménager) face à ses concurrents **Cecotec** et **H.Koenig**.
+Outil d'aide au pricing pour le e-commerce, basé sur le benchmark concurrentiel et le matching produit (texte + image). 
+Cas d'usage simulé : la marque **Klarstein** (petit électroménager) face à ses concurrents **Cecotec** et **H.Koenig**.
 
 ---
 
