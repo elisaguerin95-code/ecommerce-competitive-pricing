@@ -3,7 +3,7 @@
 import pandas as pd
 import streamlit as st
 
-DATA_DIR = "data"
+# Les CSV de données vivent au même niveau que app.py (pas de sous-dossier data/).
 
 BRAND_COLORS = {
     "Klarstein": "#1f4e5f",
@@ -42,11 +42,11 @@ def load_products():
     note_client, marque.
     """
     try:
-        df = pd.read_csv(f"{DATA_DIR}/df_final.csv")
+        df = pd.read_csv("df_final.csv")
     except FileNotFoundError:
         _fail(
-            f"Fichier de données introuvable : `{DATA_DIR}/df_final.csv`. "
-            "Vérifie que le dossier `data/` est bien présent à côté de l'app."
+            "Fichier de données introuvable : `df_final.csv`. "
+            "Vérifie qu'il est bien présent au même niveau que `app.py`."
         )
 
     missing = REQUIRED_PRODUCT_COLUMNS - set(df.columns)
@@ -66,10 +66,11 @@ def load_products():
 def load_matching():
     """Résultats du matching produit Klarstein <-> concurrents (texte + image)."""
     try:
-        m = pd.read_csv(f"{DATA_DIR}/matching_klarstein_concurrents.csv")
+        m = pd.read_csv("matching_klarstein_concurrents.csv")
     except FileNotFoundError:
         _fail(
-            f"Fichier de données introuvable : `{DATA_DIR}/matching_klarstein_concurrents.csv`."
+            "Fichier de données introuvable : `matching_klarstein_concurrents.csv`. "
+            "Vérifie qu'il est bien présent au même niveau que `app.py`."
         )
 
     missing = REQUIRED_MATCHING_COLUMNS - set(m.columns)
