@@ -34,7 +34,7 @@ Ce projet vise à répondre aux questions suivantes :
 
 ## 🌐 Application en ligne
 
-👉 Déploiement en cours (Streamlit Community Cloud / Hugging Face Spaces) — lien à ajouter une fois l'app en ligne.
+👉 [Accéder à l'application] (https://ecommerce-competitive-pricing.streamlit.app/)
 
 ---
 
@@ -44,11 +44,11 @@ Ce projet vise à répondre aux questions suivantes :
 |---------|-------------|
 | `app.py` | Page d'accueil : KPIs globaux, insights business calculés automatiquement, méthodologie |
 | `utils.py` | Chargement et nettoyage des données, calculs d'écarts de prix, logique de recommandation |
-| `page_1_Dashboard_Benchmarking.py` | Comparaison des prix par marque et par catégorie (filtres, distribution) |
-| `page_2_Analyse_par_categorie.py` | Analyse détaillée d'une catégorie de produits donnée |
-| `page_3_Simulateur_Pricing.py` | Recommandation de prix produit par produit, avec détail des concurrents similaires |
-| `data/df_final.csv` | Catalogue produit consolidé (Klarstein + concurrents) |
-| `data/matching_klarstein_concurrents.csv` | Résultats du matching produit (Klarstein ↔ concurrents) |
+| `pages/page_1_Dashboard_Benchmarking.py` | Comparaison des prix par marque et par catégorie (filtres, distribution) |
+| `pages/page_2_Analyse_par_categorie.py` | Analyse détaillée d'une catégorie de produits donnée |
+| `pages/page_3_Simulateur_Pricing.py` | Recommandation de prix produit par produit, avec détail des concurrents similaires |
+| `df_final.csv` | Catalogue produit consolidé (Klarstein + concurrents) |
+| `matching_klarstein_concurrents.csv` | Résultats du matching produit (Klarstein ↔ concurrents) |
 | `requirements.txt` | Librairies nécessaires à l'application |
 | [`df_final_embeddings.pkl`](https://huggingface.co/datasets/Elisa-Guerin/ecommerce-competitive-pricing/blob/main/df_final_embeddings.pkl) *(Hugging Face)* | Embeddings texte/image utilisés pour le matching produit |
 
@@ -62,7 +62,7 @@ Ce projet vise à répondre aux questions suivantes :
 2. **Nettoyage et consolidation** des catalogues en un seul dataset (`df_final.csv`)
 3. **Matching produit (KNN)** : pour chaque produit Klarstein, recherche des k produits concurrents les plus proches à partir d'un score combinant similarité textuelle (description) et visuelle (image), export des meilleurs matchs dans `matching_klarstein_concurrents.csv`
 
-### L'application Streamlit (`streamlit_app/`)
+### L'application Streamlit
 
 - **Accueil** — vue d'ensemble du catalogue, deux insights calculés automatiquement (écart de prix médian de Klarstein par rapport à chaque concurrent, part des produits positionnés au-dessus / alignés / en dessous du marché), et explication de la méthodologie de matching et des limites du périmètre actuel
 - **Dashboard Benchmarking** — prix moyen par marque et par catégorie, distribution des prix, filtres par marque/catégorie
@@ -92,7 +92,6 @@ Streamlit (application multi-pages), Altair (data visualisation), Python / Panda
 ### Prérequis
 
 ```bash
-cd streamlit_app
 pip install -r requirements.txt
 ```
 
