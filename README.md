@@ -35,7 +35,7 @@ Ce projet vise à répondre aux questions suivantes :
 
 ## 🌐 Application en ligne
 
-👉 [Accéder à l'application] (https://ecommerce-competitive-pricing.streamlit.app/)
+👉 [Accéder à l'application](https://ecommerce-competitive-pricing.streamlit.app/)
 
 ---
 
