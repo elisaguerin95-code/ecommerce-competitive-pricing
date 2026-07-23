@@ -45,9 +45,9 @@ Ce projet vise à répondre aux questions suivantes :
 |---------|-------------|
 | `app.py` | Page d'accueil : KPIs globaux, insights business calculés automatiquement, méthodologie |
 | `utils.py` | Chargement et nettoyage des données, calculs d'écarts de prix, logique de recommandation |
-| `pages/page_1_Dashboard_Benchmarking.py` | Comparaison des prix par marque et par catégorie (filtres, distribution) |
-| `pages/page_2_Analyse_par_categorie.py` | Analyse détaillée d'une catégorie de produits donnée |
-| `pages/page_3_Simulateur_Pricing.py` | Recommandation de prix produit par produit, avec détail des concurrents similaires |
+| `pages/Dashboard_Benchmarking.py` | Comparaison des prix par marque et par catégorie (filtres, distribution) |
+| `pages/Analyse_par_categorie.py` | Analyse détaillée d'une catégorie de produits donnée |
+| `pages/Simulateur_Pricing.py` | Recommandation de prix produit par produit, avec détail des concurrents similaires |
 | `df_final.csv` | Catalogue produit consolidé (Klarstein + concurrents) |
 | `matching_klarstein_concurrents.csv` | Résultats du matching produit (Klarstein ↔ concurrents) |
 | `requirements.txt` | Librairies nécessaires à l'application |
